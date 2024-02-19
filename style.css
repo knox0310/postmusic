@@ -16,9 +16,9 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69F7BE;
+  --color-bg: #000000;
   --color-text-main: #000000;
-  --color-primary: #FFFF00;
+  --color-primary: #ffffff;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -49,28 +49,16 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our remix on glitch button */
 .btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
+  /* Other properties */
+  background: #264cc8; /* Blue background */
+  border: 1px solid #264cc8; /* Blue border to match */
+  color: #FFFFFF; /* Change text color if needed for better visibility */
 }
 .btn--remix img {
   margin-right: 0.5rem;
 }
 .btn--remix:hover {
-  background-color: #D0FFF1;
+  background-color: #264cc8;
 }
 
 /* Navigation grid */
@@ -157,8 +145,8 @@ button,
 input {
   font-family: inherit;
   font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
+  background: #ffffff;
+  border: 2px solid #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 0.5rem 1rem;
@@ -167,7 +155,7 @@ input {
 
 /* Subheading */
 h2 {
-  color: #2800FF;
+  color: #ffffff;
 }
 
 /* Interactive image */
