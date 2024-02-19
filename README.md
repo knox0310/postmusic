@@ -1,5 +1,5 @@
 ♪└(ㅎ.ㅎ )♪┐♪└(ㅎ.ㅎ)┘♪┌( ㅎ.ㅎ)┘♪
-Group mumbers: Wentao Zheng, Shimin Chen. 
+Group members: Wentao Zheng, Shimin Chen. 
 
 This is a group project where we use GPS in conjunction with a map API to read the current location's postal code, 
 then use the postal code to correspond to different sound frequencies, 
