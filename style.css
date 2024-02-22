@@ -1,20 +1,4 @@
-/******************************************************************************
-START Glitch hello-app default styles
 
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
-/* Our default values set as CSS variables */
 :root {
   --color-bg: #000000;
   --color-text-main: #000000;
@@ -27,9 +11,10 @@ to this section's matching END comment to see page-specific styles.
 }
 
 /* Basic page style resets */
-* {
+{
   box-sizing: border-box;
 }
+
 [hidden] {
   display: none !important;
 }
@@ -50,15 +35,15 @@ to this section's matching END comment to see page-specific styles.
 /* Our remix on glitch button */
 .btn--remix {
   /* Other properties */
-  background: #264cc8; /* Blue background */
-  border: 1px solid #264cc8; /* Blue border to match */
-  color: #FFFFFF; /* Change text color if needed for better visibility */
+  background: #ffffff; /* Blue background */
+  border: 1px solid #ffffff; /* Blue border to match */
+  color: #000000; /* Change text color if needed for better visibility */
 }
 .btn--remix img {
   margin-right: 0.5rem;
 }
 .btn--remix:hover {
-  background-color: #264cc8;
+  background-color: #ffffff;
 }
 
 /* Navigation grid */
@@ -106,20 +91,38 @@ body {
 /* Page structure */
 .wrapper {
   min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px; 
 }
+
 .content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 50px; /* Adjust title size for smaller screens */
+  }
+  .illustration {
+    max-width: 90%;
+    margin-top: 2rem;
+  }
+  .wrapper {
+    margin: 0 10px;
+  }
+}
+
 /* Very light scaling for our illustration */
 .title {
-  color: #2800FF;
+  color: #575757;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
@@ -156,6 +159,7 @@ input {
 /* Subheading */
 h2 {
   color: #ffffff;
+  text-align: center; 
 }
 
 /* Interactive image */
@@ -180,4 +184,9 @@ h2 {
 }
 .fileopener:hover {
   border-bottom:3px solid var(--color-secondary);
+}
+
+#waveform {
+  max-width: 100%; /* 确保canvas不会超出其容器的宽度 */
+  height: auto; /* Optional: Adjust height as necessary */
 }
